@@ -9,7 +9,26 @@
 <p>Two main forms known as GET and POST</p>
 Get form
 <form action="links.html" method="GET">
-    <input type="text" name="data"/>
+    <label for="name">Name:</label><input type="text" name="name" id="name" placeholder="John Smith"/> <br />
+    <label for="email">Email:</label><input type="email" name="email" id="email" placeholder="yourEmail@domain.ext"> <br />
+    <label for="phone">Phone:</label><input type="tel" name="phone" id="phone" pattern="[0-9]{3} - [0-9]{3}-[0-9]{4}"
+                                            placeholder="123-456-7890"/> <br />
+    <label for="emailConsent">Can I send you 500 PB of math?</label><input type="checkbox" name="emailConsent" id="emailConsent" /> <br />
+
+    <!--- Radio buttons
+    Name must be the same to the link
+    Value and ID should reflect choice--->
+    <input type="radio" id="prefEmail" name="contactType" value="email">
+    <label for="prefEmail">Email</label><br />
+
+
+    <input type="radio" id="prefSnailmail" name="contactType" value="email">
+    <label for="prefSnailmail">Snailmail</label><br />
+
+
+    <input type="radio" id="prefPhone" name="contactType" value="email">
+    <label for="prefPhone">Phone</label><br />
+    <!--- End Radio Buttons--->
     <input type="submit"/>
 </form>
 Post form
@@ -17,5 +36,8 @@ Post form
     <input type="text" name="data"/>
     <input type="submit"/>
 </form>
+
+
+
 </body>
 </html>
