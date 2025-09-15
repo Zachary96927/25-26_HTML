@@ -29,7 +29,29 @@ Get form
     <input type="radio" id="prefPhone" name="contactType" value="email">
     <label for="prefPhone">Phone</label><br />
     <!--- End Radio Buttons--->
+
+
+ <!--- Data picker --->
+    <input type = "date" name = "dob" id="dob" >
+    <label for="dob">Date of Birth</label> <br />
+    <!--- Dropdown Menu --->
+    <label for="department"> Select department</label>
+    <select name="department" id="department">
+        <option value="tech">Tech Support</option>
+        <option value="billing">Billing</option>
+        <option value="sales">Sales</option>
+        <option value="custom">Custom Order</option>
+
+
+    </select>
+    <br />
+
+    <!--- Text Area --->
+    <label for="question">Describe your question:</label>
+    <br />
+    <textarea name="question" id="question" rows="10" cols="50"> Please describe your question</textarea> <br />
     <input type="submit"/>
+
 </form>
 Post form
 <form action="links.html" method="POST">
